@@ -18,7 +18,7 @@ public class Main {
         System.out.print("muzik notunuz : ");
         muzik = inp.nextInt();
 
-        if (mat<0 || fizik<0 || kimya<0 || turkce <0 || tarih<0 || muzik<0 ) {
+        if (mat<0 || fizik<0 || kimya<0 || turkce <0 || tarih<0 | muzik<0 ) {
             System.out.println("Notunuzu Kontrol Ediniz");
         } else {
             int toplam = (mat + fizik + kimya + turkce + tarih + muzik);
