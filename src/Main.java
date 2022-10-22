@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        System.out.print("Ortalama Hesaplama ve Sınıf Geçme Durumu Programına Hoş Geldiniz");
+
         int mat, fizik, kimya, turkce, tarih, muzik;
         Scanner inp = new Scanner(System.in);
         System.out.print("matematik notunuz : ");
