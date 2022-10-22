@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.print("Ortalama Hesaplama ve Sınıf Geçme Durumu Programına Hoş Geldiniz");
+        System.out.print("Lütfen Notlarınızı Giriniz");
 
         int mat, fizik, kimya, turkce, tarih, muzik;
         Scanner inp = new Scanner(System.in);
