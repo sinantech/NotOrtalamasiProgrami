@@ -3,50 +3,54 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        //Değişkenleri oluşturmak
-
-        int mat,fizik,kimya,turkce,tarih,muzik;
-
-        //scanner sınıfı tanımladık
-
+        int mat, fizik, kimya, turkce, tarih, muzik;
         Scanner inp = new Scanner(System.in);
-
-        //kullanıcıdan değerleri al
-
         System.out.print("matematik notunuz : ");
-
         mat = inp.nextInt();
-
         System.out.print("fizik notunuz : ");
-
         fizik = inp.nextInt();
-
         System.out.print("kimya notunuz : ");
-
         kimya = inp.nextInt();
-
         System.out.print("turkce notunuz : ");
-
         turkce = inp.nextInt();
-
         System.out.print("tarih notunuz : ");
-
-        tarih  = inp.nextInt();
-
+        tarih = inp.nextInt();
         System.out.print("muzik notunuz : ");
-
         muzik = inp.nextInt();
 
-        int toplam = (mat+fizik+kimya+turkce+tarih+muzik);
+        int toplam = (mat + fizik + kimya + turkce + tarih + muzik);
 
-        double sonuc = (toplam/6.0);
+        double sonuc = (toplam / 6.0);
 
         System.out.println("Ortalamaniz" + " " + sonuc);
-        int ortalamasiniri = 60;
+        int average = 55;
 
-        System.out.println(sonuc >= ortalamasiniri ? "Gectiniz!" : "Kaldiniz");
+        if (sonuc<average) {
+            System.out.println("SENEYEGORUSURUZAQCOCU");
+        } else if (sonuc == average) {
+            System.out.println("HADI YINE IYISIN AQ");
+        } else {
+            System.out.println("gectiniz");
+        }
 
+        System.out.print("Harf Notunuz : ");
 
-
+        if (sonuc >= 90) {
+            System.out.println(sonuc + " " + "AA");
+        } else if (sonuc >= 80) {
+            System.out.println(sonuc + " " + "BA");
+        } else if (sonuc >= 75) {
+            System.out.println(sonuc + " " + "BB");
+        } else if (sonuc >= 70) {
+            System.out.println(sonuc + " " + "CB");
+        } else if (sonuc >= 65) {
+            System.out.println(sonuc + " " + "CC");
+        } else if (sonuc >= 60) {
+            System.out.println(sonuc + " " + "DC");
+        } else if (sonuc >= 55) {
+            System.out.println(sonuc + " " + "DD");
+        } else {
+            System.out.println(sonuc + " " +  "KALDİNİZNIHAHAHAHAHAHAHABETEROL");
+        }
     }
 }
